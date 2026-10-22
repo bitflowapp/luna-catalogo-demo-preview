@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#23372c" />
+  <meta name="description" content="LUNA: carteras y accesorios con esencia atemporal. Descubrí nuestra colección boutique." />
+  <meta name="color-scheme" content="light" />
+  <title>LUNA — Carteras con esencia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <div class="announcement"><span class="tiny-star" aria-hidden="true">✳</span> PIEZAS QUE ACOMPAÑAN TU HISTORIA <span class="tiny-star" aria-hidden="true">✳</span></div>
+  <header class="site-header" id="inicio">
+    <div class="header-inner container-wide">
+      <button class="icon-button mobile-menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-controls="primaryNav" aria-expanded="false">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+      </button>
+      <nav class="nav-links" id="primaryNav" aria-label="Navegación principal">
+        <a href="#coleccion">Colección</a><a href="#filosofia">Nuestra esencia</a><a href="#editorial">Editorial</a>
+      </nav>
+      <a class="brand" href="#inicio" aria-label="LUNA, volver al inicio">LUNA<span class="brand-dot">.</span><span class="brand-under">ESTUDIO DE CARTERAS</span></a>
+      <div class="header-actions">
+        <button class="icon-button search-trigger" id="searchTrigger" aria-label="Buscar carteras" title="Buscar">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3" /><path d="m15.6 15.6 4.1 4.1" /></svg>
+        </button>
+        <button class="icon-button favorites-trigger" id="favoritesTrigger" aria-label="Ver favoritos" aria-pressed="false" title="Ver favoritos">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 5.8a5 5 0 0 0-7.1 0L12 6.9l-1.1-1.1a5 5 0 0 0-7.1 7.1L12 21l8.2-8.1a5 5 0 0 0 0-7.1Z" /></svg>
+        </button>
+        <button class="icon-button bag-trigger" id="cartTrigger" aria-label="Abrir carrito, 0 productos" aria-controls="cartDrawer" aria-expanded="false" title="Mi carrito">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z" /><path d="M9 9V6a3 3 0 0 1 6 0v3" /></svg>
+          <span id="cartCount" class="cart-count" aria-hidden="true">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <div class="hero-copy-inner">
+          <p class="eyebrow"><span class="rule"></span> LA NUEVA FORMA DE LLEVARLO TODO</p>
+          <h1 id="heroTitle">Un toque de <em>esencia</em> en cada día<span class="period">.</span></h1>
+          <p class="hero-subtitle">Carteras que combinan con tu vida, no solo con tu look. Diseños simples, detalles que enamoran.</p>
+          <a class="button button-dark hero-cta" href="#coleccion">Explorar colección <span class="arrow-diag" aria-hidden="true">↗</span></a>
+          <div class="hero-bottom"><span>OBJETOS DE DESEO, TODOS LOS DÍAS</span><span class="hero-scroll">DESLIZÁ PARA DESCUBRIR <span aria-hidden="true">↓</span></span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1400&q=85" alt="Cartera de cuero en una composición de estilo editorial" fetchpriority="high" />
+        <div class="hero-visual-shade"></div>
+        <div class="hero-badge"><span class="badge-center">L</span><svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="badgeCircle" d="M60 60m-44 0a44 44 0 1 1 88 0a44 44 0 1 1-88 0" /></defs><text><textPath href="#badgeCircle">ESTILO PARA LLEVAR · LUNA ESTUDIO · </textPath></text></svg></div>
+        <div class="hero-photo-caption"><span>01 / 03</span><span>UNA HISTORIA PARA LLEVAR</span></div>
+      </div>
+    </section>
+
+    <div class="benefit-strip" aria-label="Nuestra inspiración">
+      <span>MENOS RUIDO, MÁS ESTILO</span><span class="benefit-flower" aria-hidden="true">✳</span><span>DETALLES QUE IMPORTAN</span><span class="benefit-flower" aria-hidden="true">✳</span><span>PARA TODOS TUS PLANES</span><span class="benefit-flower" aria-hidden="true">✳</span><span>ESENCIA ATEMPORAL</span>
+    </div>
+
+    <section class="collection container" id="coleccion" aria-labelledby="collectionTitle">
+      <div class="section-kicker"><span class="line-number">01 / LA COLECCIÓN</span><span>ENCONTRÁ TU PRÓXIMA FAVORITA</span></div>
+      <div class="section-heading"><div><p class="eyebrow olive">ELEGIDAS PARA VOS</p><h2 id="collectionTitle">Un flechazo <em>inevitable.</em></h2></div><p>Ese accesorio que transforma cualquier conjunto. Descubrí piezas para cada momento.</p></div>
+      <div class="catalog-controls">
+        <div class="filter-pills" role="group" aria-label="Filtrar por estilo">
+          <button class="filter-button active" type="button" data-filter="todos" aria-pressed="true">Ver todas</button>
+          <button class="filter-button" type="button" data-filter="bandolera" aria-pressed="false">Bandoleras</button>
+          <button class="filter-button" type="button" data-filter="tote" aria-pressed="false">Tote bags</button>
+          <button class="filter-button" type="button" data-filter="mini" aria-pressed="false">Mini bags</button>
+        </div>
+        <div class="catalog-tools"><label class="search-field" id="searchField"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6" /><path d="m15 15 4.5 4.5" /></svg><span class="visually-hidden">Buscar productos</span><input id="searchInput" type="search" placeholder="Buscar..." autocomplete="off" /></label><label class="sort-label">Ordenar <select id="sortSelect" aria-label="Ordenar productos"><option value="featured">Destacados</option><option value="price-asc">Menor precio</option><option value="price-desc">Mayor precio</option><option value="name">Nombre A–Z</option></select></label></div>
+      </div>
+      <div class="products-grid" id="productsGrid" aria-live="polite"></div>
+      <div class="empty-products" id="emptyProducts" hidden><span aria-hidden="true">✳</span><h3>No encontramos coincidencias</h3><p>Probá otra búsqueda o volvé a ver todas las carteras.</p><button class="button button-outline" id="resetFilters" type="button">Ver toda la colección</button></div>
+      <p class="catalog-disclaimer">* Catálogo de demostración: fotos, modelos y precios ilustrativos. No se procesan pagos en esta versión.</p>
+    </section>
+
+    <section class="editorial" id="editorial" aria-label="Editorial de estilo">
+      <div class="editorial-image"><img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1200&q=85" loading="lazy" alt="Cartera elegante en un detalle fotográfico editorial" /></div>
+      <div class="editorial-copy"><p class="eyebrow light">UN ESTILO QUE NO PASA</p><span class="editorial-asterisk" aria-hidden="true">✳</span><h2>Lo simple<br />también <em>deja<br />huella.</em></h2><p>No necesitás más cosas. Necesitás esas pocas que te hacen sentir vos.</p><a class="text-link" href="#coleccion">Descubrí tu estilo <span aria-hidden="true">↗</span></a><span class="editorial-number">LUNA / 002</span></div>
+    </section>
+
+    <section class="values container" id="filosofia" aria-labelledby="valuesTitle">
+      <div class="section-kicker"><span class="line-number">02 / NUESTRO UNIVERSO</span><span>UN POCO MÁS DE LUNA</span></div>
+      <div class="values-header"><p class="eyebrow olive">NUESTRA ESENCIA</p><h2 id="valuesTitle">Menos, pero <em>mejor.</em></h2><p>Nos inspiran las líneas puras, los tonos naturales y esos detalles que no necesitan presentación.</p></div>
+      <div class="value-grid">
+        <div class="value-card"><span class="value-icon" aria-hidden="true">✴</span><span class="value-no">01</span><h3>Diseño sin esfuerzo</h3><p>Piezas versátiles para acompañarte de lunes a domingo.</p></div>
+        <div class="value-card"><span class="value-icon" aria-hidden="true">◌</span><span class="value-no">02</span><h3>Detalles con intención</h3><p>Texturas, formas y colores que hacen la diferencia.</p></div>
+        <div class="value-card"><span class="value-icon" aria-hidden="true">✳</span><span class="value-no">03</span><h3>Tu toque personal</h3><p>La cartera perfecta es la que se siente como vos.</p></div>
+      </div>
+    </section>
+
+    <section class="closing-cta"><div class="closing-inner"><p class="eyebrow light">TU PRÓXIMO FAVORITO TE ESPERA</p><h2>Hay cosas que <em>simplemente</em> son para vos.</h2><a href="#coleccion" class="button button-cream">Encontrá la tuya <span aria-hidden="true">↗</span></a></div><span class="closing-sun" aria-hidden="true">✳</span></section>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer-top"><div><a href="#inicio" class="footer-brand">LUNA<span>.</span></a><p>Un accesorio puede cambiar tu día.<br />Un buen diseño, quedarse con vos.</p></div><div class="footer-col"><h3>Explorar</h3><a href="#coleccion">Colección</a><a href="#filosofia">Nuestra esencia</a><a href="#editorial">Editorial</a></div><div class="footer-col"><h3>Tu compra</h3><a href="#coleccion">Elegir cartera</a><button id="footerCart" type="button">Ver mi carrito</button><a href="mailto:?subject=Consulta%20sobre%20LUNA">Hacer una consulta</a></div><div class="footer-col"><h3>Un poquito de LUNA</h3><p>Diseñado con cariño y una obsesión sana por los detalles.</p><span class="footer-symbol" aria-hidden="true">✳</span></div></div><div class="footer-bottom"><span>© <span id="currentYear">2026</span> LUNA ESTUDIO · DEMO DE TIENDA</span><span>HECHO PARA LOS DÍAS QUE MERECEN ALGO ESPECIAL <span aria-hidden="true">✳</span></span></div></div></footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true" inert>
+    <div class="drawer-head"><div><p class="eyebrow olive">TUS ELEGIDOS</p><h2 id="cartTitle">Mi carrito <span id="drawerCount">(0)</span></h2></div><button class="icon-button close-button" id="closeCart" aria-label="Cerrar carrito" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19" /></svg></button></div>
+    <div class="drawer-items" id="cartItems"></div>
+    <div class="drawer-foot" id="cartFooter"><div class="subtotal-row"><span>Subtotal</span><strong id="cartSubtotal">$ 0</strong></div><p>Precios de ejemplo. La compra no se cobra desde esta demo.</p><button class="button button-dark checkout-button" id="checkoutButton" type="button">Preparar mi pedido <span aria-hidden="true">↗</span></button><button class="link-button" id="keepShopping" type="button">Seguir explorando</button></div>
+  </aside>
+
+  <div class="product-modal modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalProductTitle" aria-hidden="true" inert><button class="icon-button close-button modal-close" id="closeProduct" aria-label="Cerrar detalle" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19" /></svg></button><div id="productModalContent"></div></div>
+  <div class="checkout-modal modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" aria-hidden="true" inert><button class="icon-button close-button modal-close" id="closeCheckout" aria-label="Cerrar pedido" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19" /></svg></button><p class="eyebrow olive">CASI LISTO</p><h2 id="checkoutTitle">Tu selección, <em>en un lugar.</em></h2><p class="checkout-intro">Generá un resumen para compartir con la tienda cuando estén habilitados sus canales de venta. <strong>Esta demo no envía ni cobra pedidos.</strong></p><div class="checkout-order" id="checkoutOrder"></div><label class="checkout-name">Nombre (opcional)<input id="customerName" type="text" autocomplete="name" placeholder="¿A nombre de quién?" maxlength="80" /></label><div class="checkout-actions"><button class="button button-dark" id="downloadOrder" type="button">Descargar resumen <span aria-hidden="true">↓</span></button><button class="button button-outline" id="copyOrder" type="button">Copiar pedido <span aria-hidden="true">⧉</span></button></div></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
